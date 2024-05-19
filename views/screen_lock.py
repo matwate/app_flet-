@@ -1,7 +1,7 @@
 from typing import Union
 import flet as ft
-from views.Router import Router, DataStrategyEnum
-from State import global_state, State
+from views.Router import Router
+# from State import global_state, State
 import threading
 import math
 
