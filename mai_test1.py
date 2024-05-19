@@ -6,8 +6,6 @@ def main(page: ft.Page):
     page.vertical_alignment = ft.MainAxisAlignment.CENTER
     page.horizontal_alignment = ft.MainAxisAlignment.CENTER
     
-    
-    
     c1 = ft.Container(
         ft.Text("Hello!", style=ft.TextThemeStyle.HEADLINE_MEDIUM),
         alignment=ft.alignment.center,

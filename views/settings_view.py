@@ -17,7 +17,6 @@ def SettingsView(router):
         page.window_destroy()
     
     content = ft.Column(
-               
             [
                 ft.Row(
                 [
