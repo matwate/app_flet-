@@ -3,16 +3,28 @@ import flet as ft
 
 def NavBar(page):
     NavBar = ft.AppBar(
-            leading=ft.Icon(ft.icons.TAG_FACES_ROUNDED),
             leading_width=40,
-            title=ft.Text("Flet Router"),
             center_title=False,
             bgcolor=ft.colors.SURFACE_VARIANT,
             actions=[
                 ft.IconButton(ft.icons.HOME, on_click=lambda _: page.go('/')),
-                ft.IconButton(ft.icons.PERSON_ROUNDED, on_click=lambda _: page.go('/profile')),
-                ft.IconButton(ft.icons.SETTINGS_ROUNDED, on_click=lambda _: page.go('/settings'))
+                ft.IconButton(ft.icons.HOME_WORK, on_click=lambda _: page.go('/Tareas')),
+                ft.IconButton(ft.icons.INVENTORY, on_click=lambda _: page.go('/Inventario'))
             ]
         )
+    
+    # NavBar = ft.Container(
+    #         content = ft.AppBar(
+    #                 leading_width=40,
+    #                 center_title=False,
+    #                 bgcolor=ft.colors.SURFACE_VARIANT,
+    #                 actions=[
+    #                     ft.IconButton(ft.icons.HOME, on_click=lambda _: page.go('/')),
+    #                     ft.IconButton(ft.icons.HOME_WORK, on_click=lambda _: page.go('/Tareas')),
+    #                     ft.IconButton(ft.icons.INVENTORY, on_click=lambda _: page.go('/Inventario'))
+    #                 ]
+    #             ),
+            
+    #     )
 
     return NavBar

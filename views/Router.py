@@ -8,7 +8,9 @@ class Router:
     def __init__(self):
         self.data = dict()
         self.routes = {}
-        self.body = ft.Container()
+        self.body = ft.Container(
+            alignment=ft.alignment.center,
+            expand=True,bgcolor="yellow")
 
     def set_route(self, stub: str, view: Callable):
         self.routes[stub] = view
